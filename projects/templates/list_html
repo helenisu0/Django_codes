@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<div class="container">
+    <h1>your project dispalyed here</h1>
+    <br>
+   <div class="row">
+         {% for project in projects %}
+             <div>
+                    <p>{{project.title}}</p>
+                    <img src="{{project.image}}" alt="project image" width="450px">
+                    <br>
+                    <small>{{project.image}}</small>
+             </div>
+   </div>
+         {% endfor %}
+</div>
+{% endblock %}
